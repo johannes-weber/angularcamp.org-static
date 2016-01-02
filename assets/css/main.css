@@ -3049,7 +3049,7 @@
 			-ms-transform: translateY(0);
 			transform: translateY(0);
 			opacity: 1;
-			margin: 0 0 1.3em 0;
+			margin: 0;
 		}
 
 			#banner .logo .icon {
@@ -3062,6 +3062,28 @@
 				line-height: 2.25em;
 				text-align: center;
 				width: 2.25em;
+			}
+
+		#banner .event-date{
+			display: inline-block;
+			padding: 0 1em;
+			margin-bottom: 2.5em;
+			color: #333333;
+		    background: #DAD72A;
+		    -webkit-transform: skew(20deg);
+		    -moz-transform: skew(20deg);
+		    -ms-transform: skew(20deg);
+		    -o-transform: skew(20deg);
+		    transform: skew(20deg);			
+		}
+			#banner .event-date span{
+				display: block;
+				font-weight: 700;
+			    -webkit-transform: skew(-20deg);
+			    -moz-transform: skew(-20deg);
+			    -ms-transform: skew(-20deg);
+			    -o-transform: skew(-20deg);
+			    transform: skew(-20deg);					
 			}
 
 		#banner h2 {
