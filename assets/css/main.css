@@ -3492,6 +3492,10 @@
 				overflow: hidden;
 			}
 
+			.wrapper .full-width{
+				width: 100% !important;
+			}
+
 			.wrapper .location{
 				float: left;
 				width: 50%;
