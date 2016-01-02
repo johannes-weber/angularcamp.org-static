@@ -2710,7 +2710,7 @@
 					width: calc(100% + 3em);
 				}
 
-			.wrapper.spotlight .features .image{
+ 			.wrapper.spotlight .features .image{
 				margin-bottom: 1.5em !important;
 				margin-left: -1.5em !important;
 				margin-top: -1.5em !important;
@@ -3523,7 +3523,17 @@
 
 			.wrapper .location + .location{
 				float: right;
-			}			
+			}	
+
+			.wrapper .speackers .image{
+				border-radius: 5px;
+				width: 20%;
+				margin-left: 2em !important;
+			}		
+
+				.wrapper .speackers .image img {
+					border-radius: 5px;
+				}
 
 		@media screen and (max-width: 980px) {
 
