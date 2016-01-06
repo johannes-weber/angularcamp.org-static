@@ -3143,6 +3143,11 @@ button:disabled,
   border: 0;
 }
 
+#header h1 a img{
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
 #header nav {
   font-family: Raleway, Helvetica, sans-serif;
   font-size: 0.8em;
