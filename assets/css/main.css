@@ -2492,6 +2492,12 @@ input[type="radio"] + label:before {
   opacity: 1.0;
 }
 
+/* typography */
+.text-left {
+  text-align: left;
+  direction: ltr;
+}
+
 /* Box */
 
 .box {
