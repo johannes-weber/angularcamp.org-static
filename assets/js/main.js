@@ -102,6 +102,17 @@
 
 			};
 
+			$menu._scrollTo = function(section) {
+				
+				var _offsetHeader = $("#header").outerHeight(),
+					to = $(section).offset().top - _offsetHeader;
+
+				$('html, body').delay(500).animate({
+					scrollTop: to
+				}, 1000);
+
+			};			
+
 			$menu
 				.appendTo($body)
 				.on('click', function(event) {
@@ -136,10 +147,9 @@
 						// Hide.
 							$menu._hide();
 
-						// Redirect.
-							window.setTimeout(function() {
-								window.location.href = href;
-							}, 350);
+
+						// Scroll To section
+							$menu._scrollTo(href);
 
 					});
 
