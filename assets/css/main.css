@@ -4262,7 +4262,7 @@ body.is-loading #banner p {
 
 .sponsor-item .sponsor-title {
   font-size: 16px;
-  opacity: 0;
+  opacity: 0.6;
   margin: 10px 0;
   display: block;
   -webkit-transition: opacity 0.1s; /* Safari */
@@ -4270,5 +4270,5 @@ body.is-loading #banner p {
 }
 
 .sponsor-item:hover .sponsor-title {
-  opacity: 0.6;
+  opacity: 1;
 }
