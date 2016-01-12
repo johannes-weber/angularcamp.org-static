@@ -4030,6 +4030,8 @@ body.is-loading #banner p {
     width: 12em;
   }
 
+  .wrapper.spotlight .image.sponsor-item { margin: 0 0 3em 0 !important; }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -4239,4 +4241,34 @@ body.is-loading #banner p {
   .copyright .external {
     display: inline-block;
   }
+}
+
+.sponsors-wrapper {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.sponsor-item {
+  margin: 0 0 4em 3em !important;
+  width: 25% !important
+  position: relative !important;
+  float: none;
+  display: inline-block;
+  overflow: auto !important;
+
+}
+
+.sponsor-item:nth-child(5n + 1) { margin-left: 0 !important; }
+
+.sponsor-item .sponsor-title {
+  font-size: 16px;
+  opacity: 0;
+  margin: 10px 0;
+  display: block;
+  -webkit-transition: opacity 0.1s; /* Safari */
+  transition: opacity 0.1s;
+}
+
+.sponsor-item:hover .sponsor-title {
+  opacity: 0.6;
 }
