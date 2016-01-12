@@ -4222,6 +4222,10 @@ body.is-loading #banner p {
   padding: 0;
 }
 
+.copyright .social + .external {
+  padding-left: 1em;
+}
+
 #footer .copyright .social li {
   display: inline-block;
   margin-left: 1em;
