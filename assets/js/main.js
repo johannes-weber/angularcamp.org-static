@@ -140,6 +140,7 @@
 					.on('click', 'a', function(event) {
 
 						var href = $(this).attr('href');
+						var isLink = new RegExp("(.html)");
 
 						event.preventDefault();
 						event.stopPropagation();
@@ -147,9 +148,14 @@
 						// Hide.
 							$menu._hide();
 
-
-						// Scroll To section
-							$menu._scrollTo(href);
+						if(isLink.test(href)){
+							window.setTimeout(function() {
+								window.location.href = href;
+							}, 350);
+						}else{
+							// Scroll To section
+								$menu._scrollTo(href);
+						}
 
 					});
 
