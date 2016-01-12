@@ -68,14 +68,10 @@
         <section class="wrapper" id="details">
             <div class="inner">
                 <div class="content">
-                    <h2 class="major">Angular Community and API decisions</h2>
+                    <h2 class="major">Promises - Arguments against detractors</h2>
                     <h3>by David Rodenas <a href="https://twitter.com/drpicox" target="_blank">@drpicox <i class="fa fa-twitter"></i></a></h3>
                     <p class="text-left">
-                        I’ve been collaborating with Angular team in the 1.5 as a contributor and I have been participating and seen how the new module.component feature is getting defined.
-                        <br>
-                        I’ll present few examples of some aspects of the definition and how it is taking form step by step driven by community.
-                        <br>
-                        I want to show how community, any one, can effectively drive API improvements through Github.
+                        Sadly I have found lot of people that, or they do not understand promises, or they do prefer to use callbacks. Here I’ll present strong arguments pro Promises through a step by step example. The example is about a common operation in services, that using callbacks could mislead in race conditions or multiple reloads. We will see how the callbacks implementation will grow up to 40 lines until solve all problems, and at the end, I will show the same implementation with Promises that takes just about 4 lines.
                     </p>
 
                     <br><br>
