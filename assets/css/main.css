@@ -3918,6 +3918,7 @@ body.is-loading #banner p {
   width: 15%;
   font-size: 0.9em;
   margin-left: 2em !important;
+  margin-right: 5px !important;
 }
 
 .wrapper .speackers .image img {
