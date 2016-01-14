@@ -3792,11 +3792,11 @@ body.is-loading #banner p {
 }
 
 .wrapper.spotlight {
-  background-color: #4c5c96;
+  background-color: #33456d;
 }
 
 .wrapper.spotlight:before, .wrapper.spotlight:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96;' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2333456d;' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight .inner {
@@ -3857,35 +3857,35 @@ body.is-loading #banner p {
 }
 
 .wrapper.spotlight.style2 {
-  background-color: #45558d;
+  background-color: #283655;
 }
 
 .wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d;' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23283655;' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight.style3 {
-  background-color: #3f4e85;
+  background-color: #2F496E;
 }
 
 .wrapper.spotlight.style3:before, .wrapper.spotlight.style3:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233f4e85;' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232F496E;' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight.style4 {
-  background-color: #39477c;
+  background-color: #002C54;
 }
 
 .wrapper.spotlight.style4:before, .wrapper.spotlight.style4:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2339477c;' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23002C54;' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight.style5 {
-  background-color: #fff;
+  background-color: #89004d;
 }
 
 .wrapper.spotlight.style5:before, .wrapper.spotlight.style5:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23324072;' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2389004d;' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight.style6 {
