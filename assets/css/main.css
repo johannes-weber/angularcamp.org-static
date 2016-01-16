@@ -917,6 +917,8 @@ u\24 + *,
     margin-left: 8.33333%;
   }
 
+  .slider-wrapper {width: 80%; margin: 0 auto; }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -4277,3 +4279,18 @@ body.is-loading #banner p {
 .sponsor-item:hover .sponsor-title {
   opacity: 1;
 }
+
+.slider-wrapper { width: 100%; position: relative; margin-top: 20px; }
+.centered-btns_nav { left: 1.75em; overflow: hidden; color: #222; text-indent: -9999999em;}
+.centered-btns_nav:hover,.centered-btns_nav:active {color: #222 !important;}
+
+.venue-map {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  border-bottom: none;
+}
+
+.rslide-item { padding: 0; }
+
+.footer-heart-margin { margin: 0 4px;}
