@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <!--[if lte IE 8]>
   <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/responsiveslides.css"/>
+  <link rel="stylesheet" href="assets/css/responsiveslides.themes.css"/>
   <link rel="stylesheet" href="assets/css/main.css"/>
   <!--[if lte IE 9]>
   <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
@@ -351,7 +353,7 @@
 
           <div class="location full-width">
             <div class="row">
-              <div class="6u 12u$(medium)">
+              <div class="6u 12u$(small) 12u$(xsmall)">
                 <h3 class="text-left">Preparty, 28th January 2016</h3>
                 <p class="text-left">
                   Antiga Fàbrica Estrella Damm
@@ -360,29 +362,48 @@
                 </p>
                 <div>
                   <a href="https://www.google.com/maps/place/Carrer+del+Rossell%C3%B3,+515,+08025+Barcelona,+Spain/@41.4090519,2.17589,17z/data=!3m1!4b1!4m2!3m1!1s0x12a4a2da38aa02ff:0x7ca857d57da09877?hl=en"
-                     target="_blank" title="Check out the details on google maps">
+                     target="_blank" title="Check out the details on google maps" class="venue-map">
                     <img src="http://goo.gl/F53fl1" alt="Map where the venue is located" class="img-responsive">
                   </a>
-                  <br>
-                  <img class="img-responsive" src="images/venue/location-preparty.jpg"
-                       alt="Antiga Fàbrica Estrella Damm"/>
                 </div>
               </div>
-              <div class="6u$ 12u$(medium)">
+
+              <div class="6u 12u$(small) 12u$(xsmall)">
                 <h3 class="text-left">AngularCamp 30-31st January 2016</h3>
                 <p class="text-left">
                   Parc de les Humanitats i les Ciències Socials
                   <br>
                   Carrer del Perú, 52, 08018 Barcelona | Tel. 934 034 543
                 </p>
-                <a href="https://www.google.com/maps/place/Carrer+del+Perú,+52,+08018+Barcelona/">
+                <a href="https://www.google.com/maps/place/Carrer+del+Perú,+52,+08018+Barcelona/" class="venue-map">
                   <img
                       src="http://maps.googleapis.com/maps/api/staticmap?center=Torre+Agbar,+BArcelona&zoom=15&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CCarrer+del+Perú+52,+08018+Barcelona"
                       alt="Parc de les Humanitats i les Ciències Socials" class="img-responsive">
                 </a>
-                <br>
-                <img class="img-responsive" src="images/venue/ub_venue.jpg"
-                     alt="Parc de les Humanitats i les Ciències Socials Can Jaumandreu"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="slider-wrapper">
+                <ul class="rslides" id="slider">
+                  <li class="rslide-item">
+                    <img src="/images/venue/preparty01.jpg" alt="" />
+                  </li>
+                  <li class="rslide-item">
+                    <img src="/images/venue/preparty02.jpg" alt="" />
+                  </li>
+                  <li class="rslide-item">
+                    <img src="/images/venue/preparty03.jpg" alt="" />
+                  </li>
+                  <li class="rslide-item">
+                    <img src="/images/venue/preparty04.jpg" alt="" />
+                  </li>
+                  <li class="rslide-item">
+                    <img src="/images/venue/preparty05.jpg" alt="" />
+                  </li>
+                  <li class="rslide-item">
+                    <img src="/images/venue/ubvenue01.jpg" alt="" />
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -542,7 +563,7 @@
         </ul>
         <ul class="external">
           <li>
-            AngularCamp. Made with <i class="fa fa-heart fa-1"></i> by <a href="http://www.meetup.com/AngularJS-Beers"
+            AngularCamp. Made with <i class="fa fa-heart fa-1 footer-heart-margin"></i> by <a href="http://www.meetup.com/AngularJS-Beers"
                                                                           target="_blank">AngularJS & Beers</a>
           </li>
           <li>
@@ -561,9 +582,13 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/util.js"></script>
+<script src="assets/js/responsiveslides.min.js"></script>
 <!--[if lte IE 8]>
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
+<script>
+
+</script>
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
