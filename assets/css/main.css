@@ -3046,6 +3046,10 @@ button:disabled,
   cursor: pointer;
 }
 
+.level.general{
+  color: #DCDCDC;
+}
+
 .level.basic{
   color: #6FB98F;
 }
@@ -3056,6 +3060,15 @@ button:disabled,
 
 .level.advance{
   color: #FA6775;
+}
+
+.level.general .tooltip{
+  background: #DCDCDC;
+  color: #333;
+}
+
+.level.general .tooltip:after{
+  border-right-color: #DCDCDC;
 }
 
 .level.basic .tooltip{
