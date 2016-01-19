@@ -143,6 +143,28 @@
       },
       "author": "David Rodenas",
       "url": "/talks/promises-arguments-against-detractors.html#details"
+    },
+    {
+      "id": 14,
+      "name": "Polymer + Angular",
+      "type": "",
+      "level": {
+        "name": "general",
+        "letter": "G"
+      },
+      "author": "Jorge del Casar",
+      "url": "/talks/polymer-and-angular.html#details"
+    },
+    {
+      "id": 15,
+      "name": "How to develop an angularJS base for backoffice tools",
+      "type": "",
+      "level": {
+        "name": "general",
+        "letter": "G"
+      },
+      "author": "Gines",
+      "url": "/talks/how-to-develop-an-angular-js-base-for-backoffice-tools.html#details"
     }
   ]
 }
