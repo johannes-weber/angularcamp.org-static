@@ -192,6 +192,10 @@
         namespace: "centered-btns"
 			});
 
+      $.getJSON( "assets/js/data/talks.json", function(data){
+        $("#talk-template").tmpl(data.talks).appendTo("#talks");
+      });
+
   });
 
 })(jQuery);
