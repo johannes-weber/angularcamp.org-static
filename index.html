@@ -28,7 +28,7 @@
   <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="assets/css/responsiveslides.css"/>
   <link rel="stylesheet" href="assets/css/responsiveslides.themes.css"/>
-  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/main.min.css"/>
   <!--[if lte IE 9]>
   <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
   <!--[if lte IE 8]>
@@ -227,124 +227,8 @@
 
 
             <h2 class="major">The following Talks and Workshops <br> have already been pledged</h2>
-            <ul class="alt list-table">
+            <ul class="alt" id="talks"></ul>
             <ul class="alt">
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <a href="building-native-mobile-apps-with-nativescript.html#details"><strong>Building native mobile apps
-                    with NativeScript - Workshop</strong></a>
-                  <br>
-                  by Sebastian Witalec
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <a href="creating-an-angular2-component-library.html#details"><strong>Creating an Angular 2 component
-                    library - Workshop</strong></a>
-                  <br>
-                  by Raul Jimenez
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <a href="videogular.html#details"><strong>Videogular</strong></a>
-                  <br>
-                  by Raul Jimenez
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <strong>AngularJS Hackathon</strong>
-                  <br>
-                  by Sherry Azimi from AngularJS Copenhagen
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <a href="introduction-angularJS-2.html#details"><strong>Introduction to Angular 2 -
-                    Workshop</strong></a>
-                  <br>
-                  by Nir Kaufman from AngularJS Israel
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <a href="rxjs-rethinking-asynchronous-in-javascript.html#details"><strong>RxJS - Rethinking Asynchronous
-                    in JavaScript</strong></a>
-                  <br>
-                  by Johannes Weber from AngularJS Munich
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <a href="future-apps-with-angular2-and-companions-ionic2-firebase.html#details"><strong>Future apps with
-                    Angular2 and companions: Ionic2 + Firebase</strong></a>
-                  <br>
-                  by Maxim Salnikov from AngularJS Oslo
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <strong>Ask me Anything</strong>
-                  <br>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <a href="sound-synthesis-with-web-audio.html#details"><strong>Sound Synthesis with Web
-                    Audio</strong></a>
-                  <br>
-                  by Luis Crespo
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div class="level general">G<div class="tooltip">General</div></div>
-                </div>
-                <div>
-                  <a href="angular-community-and-api-decisions.html#details"><strong>Angular Community and API
-                    decisions</strong></a>
-                  <br>
-                  <a href="mvc-model-the-great-forgotten.html#details"><strong>Mvc - Model, the great
-                    forgotten</strong></a>
-                  <br>
-                  <a href="angular2-services-that-call-services-and-di.html#details"><strong>Angular2: Services that call
-                    services and DI</strong></a>
-                  <br>
-                  <a href="promises-arguments-against-detractors.html#details"><strong>Promises - Arguments against
-                    detractors</strong></a>
-                  <br>
-                  by David Rodenas
-                </div>
-              </li>
-
               <li>
                 <p>
                   <br>
@@ -356,7 +240,6 @@
                 </p>
               </li>
             </ul>
-
           </div>
         </div>
       </div>
@@ -651,17 +534,33 @@
 </div>
 
 <!-- Scripts -->
+<script id="talk-template" type="text/x-jquery-tmpl">
+  <li class="talk-item">
+    <div>
+      <div class="level ${level.name}">${level.letter}<div class="tooltip">${level.name}</div></div>
+    </div>
+    <div>
+      {{if url}}
+      <a href="${url}"><strong>${name}</strong></a>
+      {{else}}
+      <strong>${name}</strong>
+      {{/if}}
+      {{if author}}
+      <p class="talk-author">by ${author}</p>
+      {{/if}}
+    </div>
+  </li>
+</script>
+
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.tmpl.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/responsiveslides.min.js"></script>
 <!--[if lte IE 8]>
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
-<script>
-
-</script>
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
