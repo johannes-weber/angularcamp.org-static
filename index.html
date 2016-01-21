@@ -226,8 +226,21 @@
             </table>
 
 
-            <h2 class="major">The following Talks and Workshops <br> have already been pledged</h2>
-            <ul class="alt" id="talks"></ul>
+            <h2 class="major">The following Talks and Workshops and Interests<br> have already been pledged</h2>
+
+            <div class="row">
+              <div class="6u 12u$(medium)">
+                <h4>Contributions</h4>
+                <ul class="alt" id="contributions"></ul>
+              </div>
+              <div class="6u$ 12u$(medium)">
+                <h4>Interests</h4>
+                <ul class="alt" id="interests"></ul>
+              </div>
+            </div>
+
+
+
             <ul class="alt">
               <li>
                 <p>
@@ -547,6 +560,20 @@
       {{/if}}
       {{if author}}
       <p class="talk-author">by ${author}</p>
+      {{/if}}
+    </div>
+  </li>
+</script>
+
+<script id="contrib-and-interest-template" type="text/x-jquery-tmpl">
+  <li class="talk-item">
+  <div>
+      <div class="level"><img src="${user.avatar_url}&s=38" alt="${user.login}"></div>
+    </div>
+    <div>
+      <a href="${html_url}" target="_blank"><strong>${title}</strong></a>
+      {{if user}}
+      <p class="talk-author">by <a href="${user.html_url}" target="_blank">${user.login}</a></p>
       {{/if}}
     </div>
   </li>
