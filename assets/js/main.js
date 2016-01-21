@@ -192,10 +192,13 @@
         namespace: "centered-btns"
 			});
 
-      $.getJSON( "assets/js/data/talks.json", function(data){
-        $("#talk-template").tmpl(data.talks).appendTo("#talks");
+      $.getJSON("https://api.github.com/repos/AngularCamp/angularcamp.org/issues?labels=contribution", function (data) {
+        $("#contrib-and-interest-template").clone().tmpl(data).appendTo("#contributions");
       });
 
+      $.getJSON("https://api.github.com/repos/AngularCamp/angularcamp.org/issues?labels=interest", function (data) {
+        $("#contrib-and-interest-template").clone().tmpl(data).appendTo("#interests");
+      });
   });
 
 })(jQuery);
