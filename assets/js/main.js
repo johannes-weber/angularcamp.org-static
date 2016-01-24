@@ -186,7 +186,7 @@
 
 			//sliders
 			$('#slider').responsiveSlides({
-				auto: false,
+				auto: true,
         pager: false,
         nav: true,
         namespace: "centered-btns"
